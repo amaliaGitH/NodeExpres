@@ -7,11 +7,11 @@ ENV  PORT=3000
 
 WORKDIR /var/www
 
-COPY https://github.com/amaliaGitH/NodeExpres ./
+COPY package*.json ./
 
 RUN  npm install
 
-COPY https://github.com/amaliaGitH/NodeExpres /var/www
+COPY . ./
 
 EXPOSE $PORT
 
